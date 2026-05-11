@@ -74,9 +74,3 @@ ratio estimator (B2) achieves the highest relative efficiency
 across all sample sizes, demonstrating that well-chosen 
 stratification and auxiliary information produce multiplicative 
 rather than additive efficiency gains.
-
-## License
-
-Data sourced from Statistics Poland (GUS) under 
-[Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).
-Code released under MIT License.
