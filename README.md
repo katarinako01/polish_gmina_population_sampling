@@ -15,6 +15,7 @@ from the 2021 National Census.
 ## Repository Structure
 
 The structure of this repository is as follows:
+```
 polish_gmina_population_sampling/
 ├── README.md
 ├── data/
@@ -26,6 +27,7 @@ polish_gmina_population_sampling/
 └── figures/
     ├── boxplots_gmina.png
     └── re_by_n.png
+```
 
 ## Data sources
 
