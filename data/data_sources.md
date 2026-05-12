@@ -1,6 +1,6 @@
 # Data Sources
 
-Both datasets were downloaded from the **GUS Local Data Bank**  
+All datasets were downloaded from the **GUS Local Data Bank**  
 (Statistics Poland), freely available at [bdl.stat.gov.pl](https://bdl.stat.gov.pl).  
 No registration is required. 
 
@@ -11,6 +11,7 @@ No registration is required.
 **Variable:** Total resident population per gmina, as of 31 March 2021  
 **Source:** Statistics Poland, National Census of Population and Housing 2021  
 **Category:** National Censuses → Census 2021 – Population → Population by age and sex
+**Role in study:** Target variable
 
 **Navigation path:**
 
@@ -35,6 +36,7 @@ DATA
 **Variable:** Total number of dwellings per gmina, as of 2021  
 **Source:** Head Office of Geodesy and Cartography (GUGiK) via GUS Local Data Bank  
 **Category:** Housing economy and municipal infrastructure → Dwelling stock
+**Role in study:** Auxiliary variable
 
 **Navigation path:**
 
@@ -52,10 +54,32 @@ DATA
                 └── Export → CSV – multidimensional table
 ```
 
+## Area (`PODZ_1410_CTAB_20260508120159.csv`)
+
+**Variable:** Total area in km² per gmina, as of 2021  
+**Source:** Head Office of Geodesy and Cartography (GUGiK) via GUS Local Data Bank  
+**Category:** Territorial Division → Geodetic Area  
+**Role in study:** Auxiliary variable candidate (rejected - Pearson correlation with population $r = 0.108$)
+
+**Navigation path:**
+```
+DATA
+└── Data by areas
+    └── Territorial Division
+        └── Geodetic Area (Data of the Head Office of
+            Geodesy and Cartography)
+            └── Area
+                ├── Year: 2021
+                ├── Area: total in square km
+                ├── Territorial unit: administrative units (gmina level)
+                ├── Add all to selection
+                └── Export → CSV – multidimensional table
+```
+
 ---
 
 ## License
 
-Both datasets are published by Statistics Poland (GUS) under  
+All datasets are published by Statistics Poland (GUS) under  
 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).  
 Attribution: Statistics Poland (GUS), [bdl.stat.gov.pl](https://bdl.stat.gov.pl)
