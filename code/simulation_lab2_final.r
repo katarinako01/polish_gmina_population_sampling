@@ -154,7 +154,7 @@ run_simulation <- function(strat_var, n = 300, B = 1000, seed = 123) {
     # B1: stratified mean
     est_B1[b] <- sum((N_h / N) * y_h)
 
-    # B2: combined ratio estimator (within strata)
+    # B2: separate ratio estimator (within strata)
     est_B2[b] <- sum((N_h / N) * (y_h / x_h) * mu_x_h)
   }
 
@@ -168,7 +168,7 @@ run_simulation <- function(strat_var, n = 300, B = 1000, seed = 123) {
     Estimator = c("A1: SRS + Mean",
                   "A2: SRS + Ratio",
                   "B1: Stratified + Mean",
-                  "B2: Stratified + Combined Ratio"),
+                  "B2: Stratified + Ratio"),
     Mean = round(c(s_A1["mean"], s_A2["mean"], s_B1["mean"],
                         s_B2["mean"]), 2),
     Bias = round(c(s_A1["bias"], s_A2["bias"], s_B1["bias"],
