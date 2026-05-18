@@ -8,7 +8,7 @@ and sampling design on the accuracy of estimating the mean
 resident population of Polish gminas (municipalities).
 
 The study compares four estimator-design combinations across 
-two stratification variables and five sample sizes, using a 
+two stratification variables and four sample sizes, using a 
 fully observed finite population of N = 2,477 Polish gminas 
 from the 2021 National Census.
 
